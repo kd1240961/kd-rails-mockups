@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>欠席管理システム</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <article id="container">
+      <header>
+        <h1><a href="./day.html">1月10日</a>　<a href="./person.html">田中健雄</a></h1>
+        <form class="">
+          <input type="button" name="bLogout" value="ログアウト" onclick="location.href='./login.html'">
+        </form>
+      </header>
+      <section>
+        <form class="">
+          <p>１時間目<input type="checkbox" name="Absence" value="1"></p>
+          <p>２時間目<input type="checkbox" name="Absence" value="2"></p>
+          <p>３時間目<input type="checkbox" name="Absence" value="3"></p>
+          <p>４時間目<input type="checkbox" name="Absence" value="4"></p>
+          <p>５時間目<input type="checkbox" name="Absence" value="5"></p>
+          <p>時間外<input type="checkbox" name="Absence" value="6"></p>
+          <input type="button" name="b" value="欠課" onclick="location.href='./day.html'">
+          <input type="button" name="b" value="欠席" onclick="location.href='./day.html'">
+          <p><input type="checkbox" name="Reason" value="1">熱</p>
+          <p><input type="checkbox" name="Reason" value="2">めまい</p>
+          <p><input type="checkbox" name="Reason" value="3">病気</p>
+          <p><input type="checkbox" name="Reason" value="4">怪我</p>
+          <p><input type="checkbox" name="Reason" value="5">寝坊</p>
+          <p><input type="checkbox" name="Reason" value="6">公欠</p>
+        </form>
+      </section>
+
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="js/bootstrap.min.js"></script>
+    </article>
+  </body>
+</html>
